@@ -1,8 +1,8 @@
 {
   "name": "babel-register-cli",
   "version": "1.0.0",
-  "description": "Just like babel-node, but use babel-register. You could it in production.",
-  "main": "index.js",
+  "description": "Just like babel-node, but using babel-register. So you could it in production.",
+  "main": "lib/babel-register.js",
   "bin": {
     "babel-register": "./bin/babel-register.js"
   },
@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/Cap32/babel-register-cli#readme",
   "dependencies": {
-    "babel-register": "^6.0.0"
+    "babel-register": "^6.0.0",
+    "path-is-absolute": "^1.0.0",
+    "yargs": "^3.32.0"
   }
 }

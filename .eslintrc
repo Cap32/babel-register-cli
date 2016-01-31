@@ -31,7 +31,7 @@
         "browser": true,
         "node": true,
         "es6": true,
-        "mocha": true,
+        "mocha": true
     },
     "rules": {
         "react/display-name": 0,
@@ -64,7 +64,7 @@
         "no-undef": 2,
         "no-underscore-dangle": 0,
         "no-unused-vars": 1,
-        "strict": [1, "global"],
+        "strict": [0],
         "semi": 1,
 
 
