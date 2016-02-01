@@ -1,7 +1,7 @@
 {
   "name": "babel-register-cli",
   "version": "2.0.0",
-  "description": "Just like babel-node, but using babel-register. So you could it in production.",
+  "description": "Just like babel-node, but using babel-register. So you could use it in production.",
   "main": "lib/babel-register.js",
   "bin": {
     "babel-register": "./bin/babel-register.js"

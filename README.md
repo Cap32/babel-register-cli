@@ -1,7 +1,7 @@
 babel-register-cli
 =========================
 
-Just like babel-node, but using babel-register. So you could it in production.
+Just like babel-node, but using babel-register. So you could use it in production.
 
 
 ## Why
