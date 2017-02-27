@@ -39,18 +39,7 @@ babel-register my-es6.js
 
 ## Usage
 
-```shell
-babel-register --help
-
-    Usage: babel-register <file> [options]
-
-    Options:
-      --debug        Debug port.
-      -h, --help     Show help                                     [boolean]
-      -v, --version  Show version number                           [boolean]
-
-```
-
+Just the same with `node`.
 
 
 ## Installation
