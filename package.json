@@ -24,7 +24,6 @@
   "homepage": "https://github.com/Cap32/babel-register-cli#readme",
   "dependencies": {
     "babel-register": "^6.0.0",
-    "path-is-absolute": "^1.0.0",
     "yargs": "^3.32.0"
   }
 }
