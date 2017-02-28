@@ -1,10 +1,7 @@
 {
     "parser": "babel-eslint",
-    "plugins": [
-        "react"
-    ],
     "ecmaFeatures": {
-        "jsx": true,
+        "jsx": false,
         "arrowFunctions": true,
         "binaryLiterals": true,
         "blockBindings": true,
@@ -34,27 +31,8 @@
         "mocha": true
     },
     "rules": {
-        "react/display-name": 0,
-        "react/jsx-boolean-value": 1,
-        "react/jsx-no-undef": 1,
-        "react/jsx-quotes": 1,
-        "react/jsx-sort-prop-types": 0,
-        "react/jsx-sort-props": 0,
-        "react/jsx-uses-react": 1,
-        "react/jsx-uses-vars": 1,
-        "react/no-did-mount-set-state": 1,
-        "react/no-did-update-set-state": 1,
-        "react/no-multi-comp": 1,
-        "react/no-unknown-property": 1,
-        "react/prop-types": 1,
-        "react/react-in-jsx-scope": 1,
-        "react/require-extension": 1,
-        "react/self-closing-comp": 1,
-        "react/sort-comp": 0,
-        "react/wrap-multilines": 1,
         "camelcase": 0,
         "consistent-return": 0,
-        "no-alert": 0,
         "no-catch-shadow": 0,
         "no-empty": 1,
         "no-extra-semi": 1,
@@ -64,12 +42,8 @@
         "no-undef": 2,
         "no-underscore-dangle": 0,
         "no-unused-vars": 1,
-        "strict": [0],
+        "strict": 0,
         "semi": 1,
-
-
-
-
 
         "comma-dangle": 0,
         "no-cond-assign": 2,
@@ -78,7 +52,6 @@
         "no-debugger": 2,
         "no-dupe-args": 2,
         "no-dupe-keys": 1,
-        "no-empty": 1,
         "no-ex-assign": 2,
         "no-extra-boolean-cast": 1,
         "no-extra-parens": 0,
@@ -101,14 +74,13 @@
         "complexity": 0,
         "curly": 1,
         "default-case": 0,
-        "dot-notation": 1,
+        "dot-notation": 0,
         "eqeqeq": [2, "smart"],
         "guard-for-in": 2,
-        "no-alert": 1,
+        "no-alert": 0,
         "no-caller": 2,
         "no-div-regex": 1,
         "no-else-return": 0,
-        "no-empty-label": 1,
         "no-eq-null": 1,
         "no-eval": 1,
         "no-extend-native": 2,
@@ -125,7 +97,7 @@
         }],
         "no-multi-str": 2,
         "no-native-reassign": 2,
-        "no-new": 1,
+        "no-new": 0,
         "no-new-func": 2,
         "no-new-wrappers": 2,
         "no-octal": 2,
@@ -134,11 +106,12 @@
         "no-process-env": 0,
         "no-proto": 2,
         "no-redeclare": 2,
-        "no-return-assign": 2,
         "no-script-url": 2,
         "no-self-compare": 2,
         "no-sequences": 2,
-        "no-unused-expressions": 1,
+        "no-unused-expressions": [1, {
+            "allowShortCircuit": true
+        }],
         "no-void": 2,
         "no-warning-comments": 0,
         "no-with": 2,
@@ -148,12 +121,11 @@
         "yoda": 2,
 
 
-        "no-catch-shadow": 1,
         "no-delete-var": 1,
         "no-label-var": 1,
         "no-shadow-restricted-names": 2,
         "no-undef-init": 0,
-        "no-undefined": 2,
+        "no-undefined": 0,
         "no-use-before-define": 2,
 
         "array-bracket-spacing": 0,
@@ -205,7 +177,7 @@
         "quotes": [1, "single", "avoid-escape"],
         "quote-props": [1, "as-needed"],
         "sort-vars": 0,
-        "space-after-keywords": [2, "always"],
+        "keyword-spacing": 2,
         "space-before-blocks": [2, "always"],
         "space-before-function-paren": [1, {
             "anonymous": "always",
@@ -214,7 +186,6 @@
         "space-in-brackets": 0,
         "space-in-parens": [2, "never"],
         "space-infix-ops": 1,
-        "space-return-throw-case": 2,
         "space-unary-ops": [2, {
             "words" : true,
             "nonwords" : false
@@ -225,7 +196,7 @@
         "constructor-super": 2,
         "generator-star-spacing": [2, {
             "before" : true,
-            "after"  : false
+            "after"  : true
         }],
         "no-this-before-super": 2,
         "no-var": 0,
@@ -235,13 +206,5 @@
         "max-depth": [2, 3],
         "max-len": [1, 80, 2],
         "max-params": [1, 4]
-    },
-    "globals": {
-        "__DEV__": true,
-        "__PROD__": true,
-        "__DEBUG__": true,
-        "__SERVER__": true,
-        "__CLIENT__": true,
-        "__ROOT_PATH__": true
     }
 }
