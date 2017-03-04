@@ -5,6 +5,10 @@ const babelRegisterCli = '../bin/babel-register.js';
 
 describe('babel-node-cli', () => {
 	it('run', () => {
-		execSync(`${babelRegisterCli} ./source`, { cwd: __dirname });
+		const result = execSync(`${babelRegisterCli} ./source -r shit`, {
+			cwd: __dirname,
+			encoding: 'utf8',
+		});
+		result && console.log(result);
 	});
 });
