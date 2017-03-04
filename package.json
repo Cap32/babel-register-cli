@@ -6,6 +6,9 @@
   "bin": {
     "babel-register": "./bin/babel-register.js"
   },
+  "scripts": {
+    "test": "mocha ./test/index"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Cap32/babel-register-cli.git"
@@ -28,6 +31,8 @@
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
-    "eslint": "2.4"
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.23.0",
+    "eslint": "2.4",
+    "mocha": "^3.2.0"
   }
 }
