@@ -7,6 +7,7 @@
     "babel-register": "./bin/babel-register.js"
   },
   "scripts": {
+    "start": "npm test -- -w",
     "test": "mocha ./test/index"
   },
   "repository": {
