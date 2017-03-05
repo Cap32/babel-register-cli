@@ -25,6 +25,7 @@ describe('babel-node-cli', () => {
 		});
 		child.on('error', (err) => {
 			console.error(err);
+			throw err;
 		});
 		child.on('exit', () => {
 			done();
