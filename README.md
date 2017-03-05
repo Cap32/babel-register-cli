@@ -1,5 +1,6 @@
-babel-register-cli
-=========================
+# babel-register-cli
+
+[![Build Status](https://travis-ci.org/Cap32/babel-register-cli.svg?branch=master)](https://travis-ci.org/Cap32/babel-register-cli)
 
 Just like babel-node, but using babel-register. So you could use it in production.
 
