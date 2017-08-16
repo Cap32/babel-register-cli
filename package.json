@@ -4,7 +4,8 @@
   "description": "Just like babel-node, but using babel-register. So you could use it in production.",
   "main": "lib/babel-register.js",
   "bin": {
-    "babel-register": "./bin/babel-register.js"
+    "babel-register": "./bin/babel-register",
+    "babel-register-cli": "./bin/babel-register"
   },
   "scripts": {
     "start": "npm test -- -w",
@@ -25,15 +26,17 @@
   "bugs": {
     "url": "https://github.com/Cap32/babel-register-cli/issues"
   },
-  "homepage": "https://github.com/Cap32/babel-register-cli#readme",
+  "homepage": "https://github.com/Cap32/babel-register-cli",
   "dependencies": {
-    "babel-register": "^6.0.0",
-    "yargs": "^3.32.0"
+    "babel-register": "^6.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.23.0",
+    "delay": "^2.0.0",
     "eslint": "2.4",
-    "mocha": "^3.2.0"
+    "is-port-reachable": "^2.0.0",
+    "mocha": "^3.2.0",
+    "semver-compare": "^1.0.0"
   }
 }
