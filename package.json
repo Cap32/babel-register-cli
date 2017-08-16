@@ -9,7 +9,8 @@
   },
   "scripts": {
     "start": "npm test -- -w",
-    "test": "mocha ./test/index"
+    "test": "mocha ./test/index",
+    "preversion": "npm test"
   },
   "repository": {
     "type": "git",
